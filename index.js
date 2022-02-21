@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require ('fs') ;
+const generateMarkdown = require('./generateMarkdown');
+const { error } = require('console');
 
 //Create Question for user input
 inquirer.
@@ -60,7 +62,14 @@ prompt =([
     message: 'Enter your email if you have any questions about the project?',
   },
   
-])
-
-
-  
+  //Function to generated the README file
+]).then((data) => {
+  console.log(data);
+  fs.writeFile('REAME.md' , generateMarkdown(data),
+  error =>{
+    if (error) {
+      console.log('Input all data')
+    }
+    console.log('you README was generated')
+  })
+})

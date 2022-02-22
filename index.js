@@ -1,11 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require ('fs') ;
-const generateMarkdown = require('./generateMarkdown');
-const { error } = require('console');
+const generateMArkdown = require('./generateMarkdown');
 
 //Create Question for user input
-inquirer.
-prompt =([
+inquirer.prompt ([
   //Title of the project
   {
     type: 'input',
@@ -32,7 +30,7 @@ prompt =([
   },
   //License available
   {
-    type: 'input',
+    type: 'list',
     name: 'licenses',
     message: 'Select a license for you project?',
     choices:['MIT' ,'Apache',  'GPL v3.0', 'None',],
@@ -64,12 +62,12 @@ prompt =([
   
   //Function to generated the README file
 ]).then((data) => {
-  console.log(data);
-  fs.writeFile('REAME.md' , generateMarkdown(data),
-  error =>{
-    if (error) {
-      console.log('Input all data')
-    }
-    console.log('you README was generated')
-  })
+console.log(data);
+fs.writeFile('README.md' , generateMArkdown(data),
+err =>{
+  if (err) {
+    console.log('Input all the data')
+  }
+  console.log('Your README was generated')
+})
 })

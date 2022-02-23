@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require ('fs') ;
-const generateMArkdown = require('./generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 //Create Question for user input
 inquirer.prompt ([
@@ -18,10 +18,10 @@ inquirer.prompt ([
   },
   //Installation instruction of the project
   {
-      type: 'input',
-      name: 'installation',
-      message: 'How do you install the project?',
-    },
+    type: 'input',
+    name: 'installation',
+    message: 'How do you install the project?',
+  },
     //Usage Information
   {
     type: 'input',
@@ -44,7 +44,7 @@ inquirer.prompt ([
   //Test Instructions
   {
     type: 'input',
-    name: 'Test',
+    name: 'test',
     message: 'How to test the project?',
   },
   //Github Username
@@ -63,7 +63,7 @@ inquirer.prompt ([
   //Function to generated the README file
 ]).then((data) => {
 console.log(data);
-fs.writeFile('README.md' , generateMArkdown(data),
+fs.writeFile('README.md' , generateMarkdown(data),
 err =>{
   if (err) {
     console.log('Input all the data')

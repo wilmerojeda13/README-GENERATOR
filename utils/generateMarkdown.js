@@ -40,7 +40,7 @@ ${data.test}
 
 ## Screenshot:
 ![alt text](assets/video1.gif)
-#### [Demo Video](https://drive.google.com/file/d/1pqAaFEcFeUqbj6lukgVRkuNpk4kJtp-k/view)
+#### Demo [Video](https://drive.google.com/file/d/1pqAaFEcFeUqbj6lukgVRkuNpk4kJtp-k/view)
 
 
 ## Contact Information:

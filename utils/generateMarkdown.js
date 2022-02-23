@@ -11,7 +11,7 @@ return `# ${data.title}
 - [Usage](#usage)
 - [Contribution](#contribution)
 - [Testing](#testing)
-- [Additonal Info](#additional-info)
+- [Screenshot](#screenshot)
 
 ## Description:
 ${data.description}
@@ -26,7 +26,8 @@ ${data.usage}
 
 
 ## License:
-${data.licenses}
+This license is public used you can find it on:
+https://opensource.org/licenses/MIT
 
 
 ## Contribution:
@@ -37,8 +38,13 @@ ${data.contribution}
 ${data.test}
 
 
+## Screenshot:
+![alt text](assets/video1.gif)
+#### [Demo Video](https://drive.google.com/file/d/1pqAaFEcFeUqbj6lukgVRkuNpk4kJtp-k/view)
+
+
 ## Contact Information:
-- Github: [${data.username}](https://github.com/${data.username})
-- Email: [${data.email}](ojedawilmerantonio@gmail.com) `;
+- Github: ${data.username}
+- Email: ${data.email} `;
 }
 module.exports = generateMarkdown

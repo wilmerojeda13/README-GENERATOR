@@ -33,12 +33,12 @@ Yes you can contribute to the project by sending me  an email.
 
 
 ## Testing:
-ou can test the project by cloning the repository , and the next step your going to go the terminal and type node index.js to start.
+You can test the project by cloning the repository , and the next step your going to go the terminal and type node index.js to start.
 
 
 ## Screenshot:
-![alt text](assets/video.gif)
-#### [Demo Video](https://drive.google.com/file/d/1pqAaFEcFeUqbj6lukgVRkuNpk4kJtp-k/view)
+![alt text](assets/video1.gif)
+#### Demo [Video](https://drive.google.com/file/d/1pqAaFEcFeUqbj6lukgVRkuNpk4kJtp-k/view)
 
 
 ## Contact Information:
